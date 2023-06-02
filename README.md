@@ -1,6 +1,6 @@
 # Portfolio Website
 
-View [Here](/)!
+View [here](https://portfolio-website-jasmineplqn.vercel.app/)!
 
 ## Thought Proccess
 
