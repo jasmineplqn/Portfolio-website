@@ -24,7 +24,11 @@ const Container = styled.div`
 `;
 
 const Text = styled.h1`
-  font-size: 5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  @media only screen and (min-width: 600px) {
+    font-size: 5rem;
+  }
 `;
 
 const StyledLink = styled(HashLink)`

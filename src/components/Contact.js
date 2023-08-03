@@ -44,37 +44,60 @@ const Container = styled.div`
   border-bottom: 2px solid var(--primary-color);
   margin: 2rem;
   padding-top: 3.5rem;
+
+  @media only screen and (min-width: 600px) {
+    padding-top: 3.5rem;
+  }
+
+  @media only screen and (min-width: 960px) {
+    padding-top: 3.5rem;
+    height: 100vh;
+  }
 `;
 
 const Section = styled.h2`
   margin-bottom: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  @media only screen and (min-width: 600px) {
+    font-size: 3rem;
+  }
 `;
 
 const Info = styled.div`
-  display: flex;
-  justify-content: end;
-  position: relative;
-  top: -5rem;
-  color: var(--content-color);
-  font-family: var(--content-font-family);
-  font-size: 0.9rem;
+  display: none;
+  @media only screen and (min-width: 960px) {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    top: -5rem;
+    color: var(--content-color);
+    font-family: var(--content-font-family);
+    font-size: 0.9rem;
+  }
 `;
 
 const Form = styled.form`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
-  width: 50%;
+  height: 60vh;
+  width: 100%;
   margin-top: 2rem;
+  @media only screen and (min-width: 600px) {
+    height: 50vh;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 50%;
+    margin-top: 2rem;
+  }
 `;
 
 const FormBox = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  height: 100%;
 `;
 
 const Box = styled.div`
@@ -97,12 +120,19 @@ const InputMsg = styled.input`
 
 const Button = styled.button`
   background-color: var(--primary-color);
-  width: 20%;
   padding: 1rem;
   border: none;
   border-radius: 20px;
   margin-top: 1rem;
   font-size: 1.5rem;
+  width: 40%;
+
+  @media only screen and (min-width: 600px) {
+    width: 30%;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 30%;
+  }
 `;
 
 const ButtonBox = styled.div`

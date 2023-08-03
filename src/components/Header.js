@@ -9,9 +9,9 @@ const Header = () => {
   return (
     <Wrapper>
       <NavBar>
-        <NavItem to="/#hero" smooth>
+        <NavTitle to="/#hero" smooth>
           <Logo>Jasmine Poliquin</Logo>
-        </NavItem>
+        </NavTitle>
         <div></div>
         <Box>
           <>
@@ -38,7 +38,7 @@ const Header = () => {
                 <Icon icon={githubAlt} />
               </LinkStyle>
               <LinkStyle
-                href="https://www.google.com/search?q=placeholder&sxsrf=APwXEdd6GFYzu-wZVBdpuNQ4mnBZfc2QAA%3A1685592833231&source=hp&ei=ARt4ZN3qC7yo5NoPxKO3-As&iflsig=AOEireoAAAAAZHgpEZ-w59JqgpbkT-wfcVd66_QOEI49&ved=0ahUKEwid77vQmqH_AhU8FFkFHcTRDb8Q4dUDCAs&uact=5&oq=placeholder&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjEIoFECcyBwgjEIoFECcyBAgjECcyDggAEIoFELEDEIMBEJECMggIABCKBRCRAjIKCAAQigUQsQMQQzIHCAAQigUQQzIKCAAQgAQQFBCHAjILCAAQgAQQsQMQgwEyBQgAEIAEOgcIIxDqAhAnOhMILhCKBRCxAxCDARDHARDRAxBDOhEILhCABBCxAxCDARDHARDRAzoLCAAQigUQsQMQgwE6CAgAEIAEELEDOg4ILhCABBCxAxDHARCvAToOCC4QrwEQxwEQsQMQgARQoQ5Y9i5gjzFoAXAAeACAAaUBiAHVCJIBAzYuNZgBAKABAbABCg&sclient=gws-wiz"
+                href="http://linkedin.com/in/jasminepoliquin"
                 target="blank_"
                 rel="noopener noreferrer"
               >
@@ -54,10 +54,22 @@ const Header = () => {
 
 export default Header;
 
-const NavItem = styled(NavHashLink)`
+const NavTitle = styled(NavHashLink)`
   text-decoration: none;
   &:hover {
     color: white;
+  }
+`;
+
+const NavItem = styled(NavHashLink)`
+  display: none;
+  text-decoration: none;
+  &:hover {
+    color: white;
+  }
+
+  @media only screen and (min-width: 600px) {
+    display: flex;
   }
 `;
 

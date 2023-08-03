@@ -52,11 +52,14 @@ const Projects = () => {
 export default Projects;
 
 const Container = styled.div`
-  height: 100vh;
   border-bottom: 2px solid var(--primary-color);
   padding: 2rem;
   padding-top: 3.5rem;
   background-color: var(--primary-color);
+
+  @media only screen and (min-width: 960px) {
+    height: 100vh;
+  }
 `;
 
 const Section = styled.h2`
@@ -67,12 +70,24 @@ const Section = styled.h2`
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  height: 80vh;
-  gap: 15px;
+  gap: 20px;
+
+  @media only screen and (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    gap: 15px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    height: 80vh;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const Image = styled.img`
@@ -106,7 +121,7 @@ const GridItem = styled.div`
   flex-direction: column;
   text-align: center;
   width: 100%;
-  height: 100%;
+  height: 20rem;
   background-color: white;
   border-radius: 1rem;
   &:hover ${Image} {
@@ -115,6 +130,10 @@ const GridItem = styled.div`
   }
   &:hover ${ProjectContent} {
     opacity: 100%;
+  }
+
+  @media only screen and (min-width: 960px) {
+    height: 100%;
   }
 `;
 

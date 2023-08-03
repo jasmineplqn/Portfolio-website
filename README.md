@@ -4,12 +4,10 @@ View [here](https://portfolio-website-jasmineplqn.vercel.app/)!
 
 ## Thought Proccess
 
-I wanted to create a simple and pretty website, easy to read and to navigate. I added different type of animations libraries to experiment with them. To make it more professional, I opted for a colour scheme that was more muted, but would still reflect my personality. Will be adding more features in the future such as dark mode, more responsive, etc. It currently has a lot of placeholders, since this is mainly the layout of my website. 
+I wanted to create a simple, pretty and responsive website, easy to read and to navigate. I added different type of animations libraries to experiment with them. To make it more professional, I opted for a colour scheme that was more muted, but would still reflect my personality.
 
-### Placeholders included are :
-- LinkedIn
-- Certificate on About page 
-- Projects and its links
-- Form
+### Things to work on in the future:
+- Contact form implementation
+- Projects links missing: Kitty's Tragedy, Cookie Clicker and Pizza Restaurant Website
 
 *Hope you enjoyed!*

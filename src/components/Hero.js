@@ -78,26 +78,67 @@ const NameContainer = styled.div`
 `;
 
 const Name = styled.h1`
-  font-size: 10rem;
+  font-size: 4rem;
+
+  @media only screen and (min-width: 600px) {
+    font-size: 7rem;
+  }
+  @media only screen and (min-width: 960px) {
+    font-size: 10rem;
+  }
 `;
 const MeetText = styled.p`
   position: relative;
-  left: -8rem;
+  left: 0rem;
   top: -1rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+
+  @media only screen and (min-width: 600px) {
+    left: -8rem;
+    top: -1rem;
+    font-size: 1.4rem;
+  }
+  @media only screen and (min-width: 960px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Devtext = styled.p`
   position: relative;
-  right: -10rem;
-  top: -1.5rem;
-  font-size: 1.3rem;
+  right: 0rem;
+  top: 0.7rem;
+  font-size: 1rem;
+
+  @media only screen and (min-width: 600px) {
+    right: -10rem;
+    top: -1.2rem;
+    font-size: 1.2rem;
+  }
+  @media only screen and (min-width: 960px) {
+    font-size: 1.3rem;
+  }
 `;
 
 const Flower = styled.svg`
   position: absolute;
   color: #4a3d619c;
-  width: 50vh;
-  left: 20rem;
-  top: 3rem;
+  width: 120px;
+  left: 0rem;
+  top: 0.1rem;
+
+  @media only screen and (min-width: 450px) {
+    width: 150px;
+    left: 5rem;
+    top: 0rem;
+  }
+  @media only screen and (min-width: 600px) {
+    width: 230px;
+    left: 5rem;
+    top: 2rem;
+  }
+  @media only screen and (min-width: 960px) {
+    width: 400px;
+    left: 20rem;
+    top: 3rem;
+  }
 `;
